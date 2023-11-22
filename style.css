@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Source+Code+Pro:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+/* font for headings */
+/* font-family: 'Roboto', sans-serif; */
+/* font for text */
+/* font-family: 'Anuphan', sans-serif; */
+/* #ffc119 */
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(39, 37, 37);
+    color: white;
+    font-family: 'Anuphan', sans-serif;
+
+}
+
+html{
+    font-size: 90%;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 20px;
+}
+
+#bars{
+    display: none;
+}
+
+/* Header Section */
+
+.head-1{
+    padding: 0.5rem;
+    display: flex;
+}
+
+.head-1 .left{
+    flex-basis: 60%;
+    text-align: center;
+    padding: 4px;
+    color: grey;
+}
+
+.head-1 .right{
+    flex-basis: 35%;
+    position: absolute;
+    right: 2%;
+    padding: 4px;
+    margin-left: 5px;
+}
+
+.head-1 .right i{
+    color: #ffc119;
+    background-color: rgb(27, 24, 24);
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.head-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.head-2 .logo{
+    flex-basis: 30%;
+    padding: 1rem 3rem;
+}
+
+.head-2 .logo .log-img{
+    width: 4rem;
+}
+
+.head-2 .navbar{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 6.5%;
+    left: 19%;
+}
+
+.head-2 .navbar ul{
+    display: flex;
+}
+
+.head-2 .navbar ul li{
+    padding: 30px;
+    list-style: none;
+}
+
+.head-2 .navbar ul li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.head-2 .navbar ul li a:hover{
+    color: #ffc119;
+    border-bottom: 2px solid #ffc119;
+    padding-bottom: 4px;
+    transition: padding-bottom 0.3s;
+}
+
+.navbar ul .active a{
+    color: #ffc119;
+    border-bottom: 2px solid #ffc119;
+    padding-bottom: 4px;
+}
+
+.search-menu{
+    position: absolute;
+    right: 2%;
+    top: 9%;
+}
+
+.search-menu input{
+    width: 24rem;
+    height: 2.4rem;
+    border: 1px solid white;
+    padding: 3px;
+    padding-left: 7px;
+    background: url('/Images/search-icon.png') no-repeat;
+    background-position: right;
+    background-size: 1.4rem;
+}
+
+/* Main content */
+
+/* Left Content */
+
+.container{
+    margin: 2rem;
+    margin-bottom: 10rem;
+}
+
+.Recent-Release-Container{
+    border: 1px solid white;
+}
+
+.main .left-content{
+    width: 70rem;
+}
+
+.left-content .head{
+    width: 69.9rem;
+    height: 3.5rem;
+    background-color: #ffc119;
+    display: flex;
+    align-items: center;  
+}
+
+.left-content .head p{
+    background-color: #ffc119;
+    padding-left: 0.9rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.left-content .head p span{
+    color: black;
+    background-color: #ffc119;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.left-content .head .pages{
+    position: relative;
+    left: 48%;
+    background: transparent;
+}
+
+.left-content .head .pages a{
+    padding: 3px 10px;
+    margin: 0px 6px;
+    background: transparent;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.left-content .head .pages a:hover{
+    background-color: green;
+    color: white;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.6fr));
+}
+
+.box-container .anime-item{
+    margin-top: 10px;
+    width: 250px;
+}
+
+.anime-item .anime-pic{
+    width: 16rem;
+    height: 22rem;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.anime-item .anime-name{
+    color: #ffc119;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.anime-item p{
+    text-align: center;
+    margin-top: 4px;
+}
+
+.update-container{
+    border: 1px solid white;
+    margin-top: 1.5rem;
+}
+
+.update-container .head p{
+    color: black;
+}
+
+.update-container .head .pages{
+    padding-left: 5rem;
+}
+
+.left-items{
+    display: inline-block;
+    padding: 0.4rem;
+}
+
+.left-items .anime-items{
+    display: flex;
+    padding: 0.5rem;
+    
+}
+
+.left-items .anime-items .anime-name{
+    color: #ffc119;
+    cursor: pointer;
+}
+
+.left-items .anime-items .anime-name:hover{
+    color: white;
+}
+
+.left-items .anime-items .ongoing-pic{
+    width: 7rem;
+    height: 10rem;
+}
+
+.left-items .anime-items .content{
+    padding: 1.7rem;
+}
+
+.left-items .anime-items p{
+    color: grey;
+    padding: 0.3rem 0px;
+}
+
+#EP-Name{
+    color: grey;
+}
+
+.right-items{
+    display: inline-block;
+    padding: 0.4rem;
+    margin-left: 7rem;
+    border-left: 1px solid grey;
+}
+
+.right-items .anime-items{
+    display: flex;
+    padding: 0.5rem;
+}
+
+.right-items .anime-items .anime-name{
+    color: #ffc119;
+    cursor: pointer;
+}
+
+.right-items .anime-items .anime-name:hover{
+    color: white;
+}
+
+.right-items .anime-items .ongoing-pic{
+    width: 7rem;
+    height: 10rem;
+}
+
+.right-items .anime-items .content{
+    padding: 1.7rem;
+}
+
+.right-items .anime-items p{
+    color: grey;
+    padding: 0.3rem 0px;
+}
+
+.Recent-Added-Series-Container{
+    border: 1px solid white;
+    margin-top: 1.5rem;
+}
+
+.Recent-Added-Series-Container .head p{
+    color: black;
+}
+
+.series-name-container{
+    display: flex;
+}
+
+.series-name-container .left-series , .right-series{
+    display: inline-block;
+    width: 35rem;
+    padding: 1rem;
+}
+
+.series-name-container .left-series a , .right-series a{
+    text-decoration: none;
+}
+
+.series-name-container .left-series a h5:hover{
+    color: white;
+}
+
+.series-name-container .right-series a h5:hover{
+    color: white;
+}
+
+.series-name-container .left-series h5{
+    color: #ffc119;
+    padding: 0.7rem 0px;
+}
+.series-name-container .right-series h5{
+    color: #ffc119;
+    padding: 0.7rem 0px;
+}
+
+.right-series{
+    border-left: 1px solid grey;
+}
+
+
+/* Right Content */
+
+.wrapper{
+    width: 24.5rem;
+    position: absolute;
+    right: 1%;
+    top: 20%;
+}
+
+.advertisement-container{
+    border: 1px solid white;
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.advertisement-container .head{
+    width: 24.5rem;
+    height: 3.5rem;
+    background-color: #ffc119;
+}
+
+.advertisement-container .head p{
+     background-color: #ffc119;
+     color: black;
+     font-size: 1.3rem;
+     padding-top: 0.8rem;
+     padding-left: 0.8rem;
+     font-weight: 100;
+     text-transform: uppercase;
+}
+
+.advertisement-container .advertisement-pic{
+    width: 24.4rem;
+    height: 20.5rem;
+    
+}
+
+.By-Time-Series-Container{
+    border: 1px solid white;
+    margin-top: 15px;
+}
+
+.By-Time-Series-Container .head{
+    background-color: #ffc119;
+    width: 24.5rem;
+    height: 3.5rem;
+}
+
+.By-Time-Series-Container .head h4{
+    background-color: #ffc119;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding: 14px 14px;
+}
+
+.By-Time-Series-Container .Series-Names{
+    padding: 20px 15px;
+}
+
+.By-Time-Series-Container .Series-Names h3{
+    padding-top: 12px;
+    color: #ffc119;
+}
+
+.By-Time-Series-Container .Series-Names h3:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.By-Time-Series-Container .Series-Names p{
+    padding-left: 30px;
+}
+
+.Onging-Series-Container{
+    border: 1px solid white;
+    margin-top: 15px;
+}
+
+.Onging-Series-Container .head{
+    background-color: #ffc119;
+    width: 24.5rem;
+    height: 3.5rem;
+}
+
+.Onging-Series-Container .head h4{
+    background-color: #ffc119;
+    color: black;
+    font-size: 1.3rem;
+    padding: 14px 14px;
+    font-weight: lighter;
+}
+
+.Onging-Series-Container .Series-Names{
+    padding: 25px;
+}
+
+.Onging-Series-Container .Series-Names p{
+    color: #ffc119;
+    padding-top: 5px;
+}
+
+.Onging-Series-Container .Series-Names p:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.Genres-Container{
+    border: 1px solid white;
+    margin-top: 22px;
+}
+
+.Genres-Container .head{
+    background-color: #ffc119;
+    width: 24.5rem;
+    height: 3.5rem;
+}
+
+.Genres-Container .head h4{
+    background-color: #ffc119;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 15px 10px;
+    color: black;
+}
+
+.Genres-Container .left-genres , .right-genres{
+    display: inline-block;
+    padding: 15px;
+}
+
+.Genres-Container .left-genres h5:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.Genres-Container .right-genres h5:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.Genres-Container .left-genres h5{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #ffc119;
+}
+
+.Genres-Container .right-genres h5{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #ffc119;
+    padding-left: 2.5rem;
+    border-left: 1px solid grey;
+}
+
+.Seasons-Container{
+    border: 1px solid white;
+    margin-top: 25px;
+}
+
+.Seasons-Container .head{
+    background-color: #ffc119;
+    width: 24.5rem;
+    height: 3.5rem;
+}
+
+.Seasons-Container .head h4{
+    background-color: #ffc119;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    padding: 15px;
+    color: black;
+}
+
+.Seasons{
+    padding: 15px;
+}
+
+#seasons-name{
+    color: grey;
+    cursor: no-drop;
+}
+
+.Seasons-Container .Seasons p span{
+    color: #ffc119;
+}
+
+.Seasons-Container .Seasons p span:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.Seasons-Container .Seasons p{
+    padding-bottom: 10px;
+}
+
+.nav-list{
+    display: none;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1410px){
+    .rigth-content{
+        display: none;
+    }
+    .wrapper{
+        display: none;
+    }
+    .main .left-content{
+        width: 100%;
+        border: none;
+    }
+    .left-content .head{
+        width: 100%;
+    }
+    .head-1{
+        display: none;
+    }
+    #navbar{
+        display: none;
+    }
+    .search-menu{
+        position: absolute;
+        top: 5%;
+    }
+    .head-2 .logo{
+        width: 10rem;
+        margin-left: 2.5rem;
+        margin-top: -4rem;
+    }
+    .head-2 .logo .logo-img{
+       position: relative;
+       top: -5%;
+       left: 3%;
+    }
+    #bars{
+        display: inline;
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    .nav-list{
+        width: 15rem;
+        height: 80vh;
+        background-color: #000000c7;
+        color: white;
+        display: inline-block;
+        border-radius: 10px;
+        position: absolute;
+        left: -300px;
+    }
+    .nav-list ul{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .nav-list ul li{
+        background-color: #000000c7;
+        list-style: none;
+        padding-top: 2rem;
+    }
+    .nav-list ul li a{
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    .nav-list ul li a:hover{
+        color: #ffc119;
+        border-bottom: 1px solid #ffc119;
+    }
+    .nav-list ul li a i{
+        font-size: 1.6rem;
+        padding-right: 0.5rem;
+    }
+    /* .anime-item .anime-pic{
+        width: 22rem;
+        height: 28rem;
+        border: 1px solid grey;
+        cursor: pointer;
+    } */
+    
+}
+
+@media screen and (max-width: 1375px){
+    .rigth-content{
+        display: none;
+    }
+    .wrapper{
+        display: none;
+    }
+    .main .left-content{
+        width: 100%;
+        border: none;
+    }
+    .left-content .head{
+        width: 100%;
+    }
+    .head-1{
+        display: none;
+    }
+    #navbar{
+        display: none;
+    }
+    .search-menu{
+        position: absolute;
+        top: 5%;
+    }
+    .head-2 .logo{
+        width: 10rem;
+        margin-left: 2.5rem;
+        margin-top: -4rem;
+    }
+    .head-2 .logo .logo-img{
+       position: relative;
+       top: -5%;
+       left: 3%;
+    }
+    #bars{
+        display: inline;
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    .nav-list{
+        width: 15rem;
+        height: 80vh;
+        background-color: #000000c7;
+        color: white;
+        display: inline-block;
+        border-radius: 10px;
+        position: absolute;
+        left: -300px;
+    }
+    .nav-list ul{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .nav-list ul li{
+        background-color: #000000c7;
+        list-style: none;
+        padding-top: 2rem;
+    }
+    .nav-list ul li a{
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    .nav-list ul li a:hover{
+        color: #ffc119;
+        border-bottom: 1px solid #ffc119;
+    }
+    .nav-list ul li a i{
+        font-size: 1.6rem;
+        padding-right: 0.5rem;
+    }
+    .anime-item .anime-pic{
+        width: 20rem;
+        height: 22rem;
+        border: 1px solid grey;
+        cursor: pointer;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .rigth-content{
+        display: none;
+    }
+    .wrapper{
+        display: none;
+    }
+    .main .left-content{
+        width: 100%;
+        border: none;
+    }
+    .left-content .head{
+        width: 100%;
+    }
+    .head-1{
+        display: none;
+    }
+    #navbar{
+        display: none;
+    }
+    .search-menu{
+        position: absolute;
+        top: 5%;
+    }
+    .head-2 .logo{
+        width: 10rem;
+        margin-left: 2.5rem;
+        margin-top: -4rem;
+    }
+    .head-2 .logo .logo-img{
+       position: relative;
+       top: -5%;
+       left: 3%;
+    }
+    #bars{
+        display: inline;
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    .nav-list{
+        width: 15rem;
+        height: 80vh;
+        background-color: #000000c7;
+        color: white;
+        display: inline-block;
+        border-radius: 10px;
+        position: absolute;
+        left: -300px;
+    }
+    .nav-list ul{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    .nav-list ul li{
+        background-color: #000000c7;
+        list-style: none;
+        padding-top: 2rem;
+    }
+    .nav-list ul li a{
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    .nav-list ul li a:hover{
+        color: #ffc119;
+        border-bottom: 1px solid #ffc119;
+    }
+    .nav-list ul li a i{
+        font-size: 1.6rem;
+        padding-right: 0.5rem;
+    }
+    .anime-item .anime-pic{
+        width: 18rem;
+        height: 22rem;
+        border: 1px solid grey;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .Recent-Release-Container .head .pages{
+        display: none;
+    }
+    .update-container .head .pages{
+        display: none;
+    }
+    .box-container .anime-item{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+
+    }
+
+    
+}
+
+
+
+
+
